@@ -1,3 +1,5 @@
+language: generic
+
 sudo: required
 services:
   - docker
@@ -6,4 +8,4 @@ before_install:
   - docker build -t myreactimage -f Dockerfile.dev .
 
 scripts:
-  - docker run myreactimage  npm run test -- --coverage
+  - docker run -e CI=true myreactimage  npm run test
