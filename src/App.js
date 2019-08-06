@@ -11,7 +11,7 @@ class App extends Component {
           <h2>Welcome to React</h2>
         </div>
         <p className="App-intro">
-          Code pushed to Travis via feature and also deploy on aws.
+          Code pushed to Travis.
         </p>
       </div>
     );
